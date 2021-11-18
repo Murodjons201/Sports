@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff'),
+        url('../fonts/Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-LightItalic.woff') format('woff'),
+        url('../fonts/Rubik-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container {
+    max-width: 100%;
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+  .sports {
+      width: 480px;
+      height: 355px;
+      padding: 45px;
+      background-color: #fff;
+}
+
+.sports__heading {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-family: Rubik;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+input:checked + .form__span {
+    background-image: url("../images/table-tennis.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked + .form--basketbol {
+    background-image: url("../images/basketball-ball.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked + .form--voleybol{
+    background-image: url("../images/volleyball-ball.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked + .form--hokkey {
+    background-image: none;
+}
+
+input:disabled + .form--hokkey {
+    background-image: url("../images/hockey-puck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:focus + .form__span {
+    box-shadow: 0px 0px 0px 3px #0E85F3;
+}
+
+.form__span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.form__heading {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.form--headding {
+    color:#aaaaaa;
+}
