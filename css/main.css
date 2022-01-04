@@ -1,18 +1,16 @@
 @font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
-        url('../fonts/Rubik-Light.woff') format('woff'),
-        url('../fonts/Rubik-Light.ttf') format('truetype');
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff"),
+        url("../fonts/Rubik-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rubik';
-    src: url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
-        url('../fonts/Rubik-LightItalic.woff') format('woff'),
-        url('../fonts/Rubik-LightItalic.ttf') format('truetype');
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-LightItalic.woff2") format("woff2"), url("../fonts/Rubik-LightItalic.woff") format("woff"),
+        url("../fonts/Rubik-LightItalic.ttf") format("truetype");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -27,7 +25,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 
 img {
@@ -43,7 +41,6 @@ img {
     padding: 0 20px;
 }
 
-
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -54,11 +51,11 @@ img {
     width: 1px;
 }
 
-  .sports {
-      width: 480px;
-      height: 355px;
-      padding: 45px;
-      background-color: #fff;
+.sports {
+    width: 480px;
+    height: 355px;
+    padding: 45px;
+    background-color: #fff;
 }
 
 .sports__heading {
@@ -84,18 +81,10 @@ input:checked + .form__span {
 
 input:checked + .form--basketbol {
     background-image: url("../images/basketball-ball.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-input:checked + .form--voleybol{
+input:checked + .form--voleybol {
     background-image: url("../images/volleyball-ball.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-input:checked + .form--hokkey {
-    background-image: none;
 }
 
 input:disabled + .form--hokkey {
@@ -105,7 +94,7 @@ input:disabled + .form--hokkey {
 }
 
 input:focus + .form__span {
-    box-shadow: 0px 0px 0px 3px #0E85F3;
+    box-shadow: 0px 0px 0px 3px #0e85f3;
 }
 
 .form__span {
@@ -127,5 +116,5 @@ input:focus + .form__span {
 }
 
 .form--headding {
-    color:#aaaaaa;
+    color: #aaaaaa;
 }
